@@ -20,7 +20,7 @@ public class PersonMarshaller {
     Marshaller createMarshaller(String property, boolean value) {
         try {
             var marshaller = jaxbContext.createMarshaller();
-            marshaller.setProperty("com.sun.xml.bind.xmlDeclaration", false);
+            marshaller.setProperty(property, value);
             marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
             return marshaller;
         } catch (Exception ex) {
