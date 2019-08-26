@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<xsd:schema
+        xmlns="https://github.com/starwarsjk/person"
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        xmlns:a="https://github.com/starwarsjk/address"
+        elementFormDefault="qualified"
+        targetNamespace="https://github.com/starwarsjk/person">
+
+    <xsd:import namespace="https://github.com/starwarsjk/address"
+                schemaLocation="address.xsd"/>
+
+    <xsd:element name="Person">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="Name" type="xsd:string"/>
+                <xsd:element name="Address" type="a:Address"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+</xsd:schema>
