@@ -18,7 +18,7 @@
         <jaxb.api>2.3.0</jaxb.api>
         <jaxb.runtime>2.3.2</jaxb.runtime>
         <jakarta.activation>1.2.1</jakarta.activation>
-        <groovy>2.5.8</groovy>
+        <groovy>2.5.14</groovy>
         <spock.core>1.3-groovy-2.5</spock.core>
         <gmaven.plugin>1.6.3</gmaven.plugin>
         <maven.jaxb.plugin>0.14.0</maven.jaxb.plugin>
